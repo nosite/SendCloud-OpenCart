@@ -1,3 +1,4 @@
 dist/
 docs/build/
 *.pyc
+Thumbs.db
