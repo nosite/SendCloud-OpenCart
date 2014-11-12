@@ -217,7 +217,8 @@ class ControllerModuleSendcloud extends Controller {
 
 	private function updateOrderStatus($order){
 		$order_id = $order['order_id'];
-		$order_status_id = $this->model_setting_setting->getSetting('sendcloud')['sendcloud_automate'];
+		$sendcloud_settings = $this->model_setting_setting->getSetting('sendcloud');
+		$order_status_id = $sendcloud_settings['sendcloud_automate'];
 		$notify = $this->language->get('text_no');
 		$comment = nl2br($this->language->get('log_message'));
 		$date_added = date($this->language->get('date_format_short'));
