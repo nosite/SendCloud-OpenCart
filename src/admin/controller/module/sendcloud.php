@@ -219,7 +219,7 @@ class ControllerModuleSendcloud extends Controller {
 		$order_id = $order['order_id'];
 		$sendcloud_settings = $this->model_setting_setting->getSetting('sendcloud');
 		$order_status_id = $sendcloud_settings['sendcloud_automate'];
-		$notify = $this->language->get('text_no');
+		$notify = false;
 		$comment = nl2br($this->language->get('log_message'));
 		$date_added = date($this->language->get('date_format_short'));
 
