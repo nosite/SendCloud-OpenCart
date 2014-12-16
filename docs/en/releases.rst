@@ -2,6 +2,11 @@
 Releases
 ********
 
+1.0.2
+=====
+
+* Fixed notifiy setting in orderhistory.
+
 1.0.1
 =====
 
