@@ -6,6 +6,7 @@ $_['default_status_label']    = 'Zet status van bestelling automatisch op:';
 $_['default_status']   	      = '---';
 
 $_['sendcloud_address2_as_housenumber_label'] = 'Gebruik adres 2 als huisnummer';
+$_['sendcloud_panel_link_label'] = '';
 
 $_['msg_settings_saved']      = 'Instellingen opgeslagen.';
 $_['msg_no_api_settings']     = 'Fout: Geen API public en/of secret key gevonden.';
