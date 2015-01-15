@@ -5,7 +5,7 @@
 	<code>SendCloud_OpenCart_2_OCmod</code>
 	<version>1.0.2</version>
 	<author>NoSite.nl for SendCloud</author>
-	<link>http://www.opencart.com/index.php?route=extension/extension&filter_search=sendcloud</link>
+	<link>http://www.sendcloud.nl</link>
 	<file path="admin/view/template/sale/order_list.tpl">
 		<operation error="abort">
 			<search><![CDATA[<button type="submit" id="button-shipping"]]></search>
