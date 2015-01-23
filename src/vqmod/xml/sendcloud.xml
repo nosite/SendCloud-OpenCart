@@ -1,6 +1,6 @@
 <modification>
 	<id>SendCloud OpenCart 2 Extension</id>
-	<version>1.0.2</version>
+	<version>1.0.3</version>
 	<vqmver>2.3.0</vqmver>
 	<author>SendCloud</author>
 	<file name="admin/view/template/sale/order_list.tpl">
