@@ -59,6 +59,10 @@ Het OCmod bestand kun je vinden in de map `ocmod/` van de module.
 Upload het bestand `sendcloud.ocmod.xml` met behulp van de extensie installatie pagina in OpenCart en ga verder met de volgende stap.
 
 .. image:: ../images/upload_ocmod.png
+
+Vergeet niet om de cache te verversen om de aanpassinge te activeren. Dit kun je doen door naar de modificatie pagina te gaan. Vervolgens selecteer je de SendCloud module en klik je op de oranje en blauwe knop om de cache te verversen.
+
+.. image:: ../images/clear_cache_ocmod.png
  
  
 7.  Activeren van de SendCloud Extensie
