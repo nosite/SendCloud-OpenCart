@@ -33,11 +33,11 @@ If you don't have virtualenv installed yet install it by using:
 2.  Setup a virtualenv for building the Extension and documentation
 -------------------------------------------------------------------
 
-* First move to the location where you want to place the virtualenv.
-* Create the virtual environment ``virtualenv sendcloud-opencart-extension``
-* Activate the environment ``. virtualenv sendcloud-opencart-extension/Scripts/activate``
-* Check if your virtualenv is activated. You should see ``(sendcloud-opencart-extension)`` before your command input.
-* Install *Sphinx* and *rst2pdf*: ``pip install sphinx rst2pdf``
+* First move to the location where you want to place the virtualenv. You can do this in the root of the project. The env/ directory is ignored by git.
+* Create the virtual environment ``virtualenv env``
+* Activate the environment ``. env/Scripts/activate`` (Cygwin) or ``source env/bin/activate`` (Linux/Mac OSX)
+* Check if your virtualenv is activated. You should see ``(env)`` before your command input.
+* Install *Sphinx* and *rst2pdf*: ``pip install -r requirements.txt``
 
 
 Get the repository
