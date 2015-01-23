@@ -2,6 +2,11 @@
 Releases
 ********
 
+1.0.3
+=====
+
+* Added OCmod support. `GitHub Issue #4 <https://github.com/SendCloud/SendCloud-OpenCart/pull/3>`_.
+
 1.0.2
 =====
 
