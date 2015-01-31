@@ -1,4 +1,5 @@
 dist/
+env/
 docs/build/
 *.pyc
 Thumbs.db
