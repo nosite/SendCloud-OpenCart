@@ -1,7 +1,7 @@
 <modification>
 	<name>SendCloud Admin Menu</name>
 	<version>1.0</version>
-	<author>NoSite.nl</author>
+	<author>NoSite.nl for SendCloud.nl</author>
 	<code>sendcloud_admin_menu_ocmod</code>
 	
 	<file path="admin/controller/common/menu.php">
