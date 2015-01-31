@@ -5,7 +5,7 @@ $_['settings_h3']		  = 'Modify SendCloud Setttings';
 $_['default_status_label'] = 'Set the order state after transport to';
 $_['default_status']   	  = '---';
 
-$_['sendcloud_address2_as_housenumber_label'] = 'Use address 2 as housenumber';
+$_['sendcloud_address2_as_housenumber_label'] = 'Use address 2 as Housenumber';
 
 $_['msg_settings_saved'] = 'Settings saved.';
 $_['msg_no_api_settings'] = 'Error: No api public and/or secret key found.';
