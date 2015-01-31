@@ -34,7 +34,7 @@
 	<file path="admin/controller/sale/order.php">
 		<operation>
 			<search><![CDATA[$data['invoice'] = $this->url->link('sale/order/invoice', 'token=' . $this->session->data['token'], 'SSL');]]></search>
-			<add position="after"><![CDATA[$data['sendcloud_url'] = $this->url->link('module/sendcloud/bulk', 'token=' . $this->session->data['token'], 'SSL');]]></add>
+			<add position="after"><![CDATA[$data['sendcloud_url'] = $this->url->link('sendcloud/sendcloud/bulk', 'token=' . $this->session->data['token'], 'SSL');]]></add>
 		</operation>
 	</file>
 </modification>
