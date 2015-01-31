@@ -70,15 +70,7 @@
 					</select>
 				</div>
             </div>
-			
-			<div class = "form-group">
-		      	<br />
-				<label class="col-sm-2 control-label" for="sendcloud_panel_link"></label>
-				<div class="col-sm-10">
-					<a href="http://panel.sendcloud.nl/" target="_blank">SendCloud Panel <i class="fa fa-external-link fa-2x"></i></a>
-				</div>
-            </div>
-			
+
         </form>
       </div>
     </div>
