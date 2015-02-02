@@ -8,7 +8,7 @@ class ControllerModuleSendcloud extends Controller {
 	public function index() { 
 		
 		$settings = $this->load->model('setting/setting');
-		$language = $this->load->language('sendcloud/sendcloud');
+		$language = $this->load->language('module/sendcloud');
 
 		// Set language data
 		$data['heading_title'] = $this->language->get('heading_title');
@@ -88,11 +88,11 @@ class ControllerModuleSendcloud extends Controller {
 
    		$data['breadcrumbs'][] = array(
        		'text'      => $this->language->get('settings_title'),
-			'href'      => $this->url->link('sendcloud/sendcloud', 'token=' . $this->session->data['token'], 'SSL'),
+			'href'      => $this->url->link('module/sendcloud', 'token=' . $this->session->data['token'], 'SSL'),
       		'separator' => ' :: '
    		);
 		
-		$data['form_action'] = $this->url->link('sendcloud/sendcloud', 'token=' . $this->session->data['token'], 'SSL');
+		$data['form_action'] = $this->url->link('module/sendcloud', 'token=' . $this->session->data['token'], 'SSL');
 		$data['cancel'] = $this->url->link('extension/module', 'token=' . $this->session->data['token'], 'SSL');
 		$data['button_save'] = $this->language->get('button_save');
 		$data['button_cancel'] = $this->language->get('button_cancel');
@@ -105,7 +105,7 @@ class ControllerModuleSendcloud extends Controller {
 			$this->session->data['success'] = $data['msg_settings_saved'];
 		}
 
-		$this->response->setOutput($this->load->view('sendcloud/sendcloud.tpl', $data));
+		$this->response->setOutput($this->load->view('module/sendcloud.tpl', $data));
 	}
 	
 	protected function validate() {
@@ -121,7 +121,7 @@ class ControllerModuleSendcloud extends Controller {
 	public function bulk() {	
 		$settings = $this->load->model('setting/setting');
 		$sendcloud_settings = $this->model_setting_setting->getSetting('sendcloud');
-		$language = $this->load->language('sendcloud/sendcloud');
+		$language = $this->load->language('module/sendcloud');
 
 		if (!empty($sendcloud_settings['sendcloud_api_key']) && !empty($sendcloud_settings['sendcloud_api_secret'])) {
 			$api = new SendcloudApi('live', $sendcloud_settings['sendcloud_api_key'], $sendcloud_settings['sendcloud_api_secret']);
