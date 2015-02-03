@@ -1,7 +1,7 @@
 <modification>
 	<name>SendCloud Admin Menu</name>
-	<version>1.0.1</version>
-	<author>NoSite.nl for SendCloud.nl</author>
+	<version>1.0</version>
+	<author>NoSite.nl</author>
 	<code>sendcloud_admin_menu_ocmod</code>
 	
 	<file path="admin/controller/common/menu.php">
@@ -11,8 +11,8 @@
 		]]></search>
 		<add position="after"><![CDATA[
 		$data['text_sendcloud'] = $this->language->get('text_sendcloud');
-		$data['text_sendcloud_view'] = $this->language->get('text_sendcloud_view');
-		$data['text_sendcloud_link_panel'] = $this->language->get('text_sendcloud_link_panel');
+		$data['text_sendcloud_parcel_list'] = $this->language->get('text_sendcloud_parcel_list');
+		$data['text_sendcloud_panel_link'] = $this->language->get('text_sendcloud_panel_link');
 		$data['text_sendcloud_module'] = $this->language->get('text_sendcloud_module');
 		]]></add>
 		</operation>
@@ -23,9 +23,9 @@
 		]]></search>
 		<add position="before"><![CDATA[
 		$data['sendcloud'] = $this->url->link('sendcloud/parcel_list', 'token=' . $this->session->data['token'], 'SSL');
-		$data['sendcloud_view'] = $this->url->link('sendcloud/parcel_list', 'token=' . $this->session->data['token'], 'SSL');
-		$data['sendcloud_link_panel'] = $this->url->link('sendcloud/link_panel', 'token=' . $this->session->data['token'], 'SSL');
-		$data['sendcloud_module'] = $this->url->link('module/sendcloud', 'token=' . $this->session->data['token'], 'SSL');
+		$data['sendcloud_parcel_list'] = $this->url->link('sendcloud/parcel_list', 'token=' . $this->session->data['token'], 'SSL');
+		$data['sendcloud_panel_link'] = $this->url->link('sendcloud/panel_link', 'token=' . $this->session->data['token'], 'SSL');
+		$data['sendcloud_module'] = $this->url->link('sendcloud/sendcloud', 'token=' . $this->session->data['token'], 'SSL');
 		]]></add>
 		</operation>
 	</file>
@@ -38,8 +38,8 @@
 		<add position="before"><![CDATA[
 		<li id="sendcloud"><a class="parent"><i class="fa fa-dropbox fa-fw"></i> <span><?php echo $text_sendcloud; ?></span></a>
 		<ul>
-		<li><a href="<?php echo $sendcloud_view; ?>"><?php echo $text_sendcloud_view; ?></a></li>
-		<li><a href="<?php echo $sendcloud_link_panel; ?>"><?php echo $text_sendcloud_link_panel; ?></a></li>
+		<li><a href="<?php echo $sendcloud_parcel_list; ?>"><?php echo $text_sendcloud_parcel_list; ?></a></li>
+		<li><a href="<?php echo $sendcloud_panel_link; ?>"><?php echo $text_sendcloud_panel_link; ?></a></li>
 		<li><a href="<?php echo $sendcloud_module; ?>"><?php echo $text_sendcloud_module; ?></a></li>
 		</ul>
 		</li>
@@ -54,8 +54,8 @@
 		]]></search>
 		<add position="after"><![CDATA[
 		$_['text_sendcloud'] = 'SendCloud';
-		$_['text_sendcloud_view'] = 'Parcellist';
-		$_['text_sendcloud_link_panel'] = 'SendCloud Panel';
+		$_['text_sendcloud_parcel_list'] = 'Parcellist';
+		$_['text_sendcloud_panel_link'] = 'SendCloud Panel';
 		$_['text_sendcloud_module'] = 'Module settings';]]></add>
 		</operation>
 	</file>
@@ -67,8 +67,8 @@
 		]]></search>
 		<add position="after"><![CDATA[
 		$_['text_sendcloud'] = 'SendCloud';
-		$_['text_sendcloud_view'] = 'Verzendingen bekijken';
-		$_['text_sendcloud_link_panel'] = 'SendCloud Panel';
+		$_['text_sendcloud_parcel_list'] = 'Verzendingen bekijken';
+		$_['text_sendcloud_panel_link'] = 'SendCloud Panel';
 		$_['text_sendcloud_module'] = 'Module setting';]]></add>
 		</operation>
 	</file>
